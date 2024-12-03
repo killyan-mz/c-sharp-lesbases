@@ -1,6 +1,6 @@
 ﻿namespace tp12;
 
-public class exec
+public class Program
 {
     
     public static double RemiseFixe(absArticle article)
