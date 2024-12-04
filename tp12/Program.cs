@@ -164,7 +164,7 @@ public class Program
                 Console.WriteLine($"Article : {article.GetType().Name}, Coût de location : {rentCost:F2}€");
             }
         }
-        Console.WriteLine(Titre("exercice 2",100,false,true));
+        Console.WriteLine(Titre("exercice 2",100,true,true));
         if (visible[4])
         {
             List<Publication> publications = new List<Publication>
@@ -176,7 +176,7 @@ public class Program
             Console.WriteLine("Détails des publications :");
             foreach (var publication in publications){publication.PublishDetails();}
         }
-        Console.WriteLine(Titre("exercice 3",100,false,true));
+        Console.WriteLine(Titre("exercice 3",100,true,true));
         if (visible[5])
         {
             List<absArticle> articles = new List<absArticle>
