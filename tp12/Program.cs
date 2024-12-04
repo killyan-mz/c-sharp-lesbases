@@ -1,5 +1,7 @@
 ﻿namespace tp12;
 
+using System.Linq;
+
 public class Program
 {
     
@@ -27,7 +29,7 @@ public class Program
     public static void Main()
     {
         
-        bool[] visible = {true,true,true,true,true,true,true};
+        bool[] visible = {false,false,false,false,false,false,true};
         
         Console.WriteLine(Titre("tp 1",100,true));
         Console.WriteLine(Titre("exercice article",100,false,true));
@@ -203,12 +205,32 @@ public class Program
         Console.WriteLine(Titre("tp 3",100));
         Console.WriteLine(Titre("exercice",100,false,true));
         if (visible[6]){
-            ArticleTypé[] articles =
-            {
+            
+            var articles2 = new List<ArticleTypé>() {
                 new ArticleTypé("Pomme", 2.5, 20, TypeArticle.Alimentaire),
                 new ArticleTypé("Savon", 1.2, 15, TypeArticle.Droguerie),
                 new ArticleTypé("T-shirt",15.0,20, TypeArticle.Habillement)
             };
+            
+            Console.WriteLine(Titre("article:",20));
+            
+            Console.WriteLine("[question 1]");
+            
+            Console.WriteLine("[filtrer par type]");
+            extention.afficherfilterarttype(articles2);
+            
+            Console.WriteLine("[trier par prix]");
+            extention.afficherorderby(articles2);
+            
+            Console.WriteLine("[afficher par stock total de chaque]");
+            extention.affichersommetotal1(articles2);
+            
+            Console.WriteLine("[afficher par stock total au global]");
+            extention.affichersommetotal2(articles2);
+            
+            Console.WriteLine("[question 2]");
+            
+            
             
         }
         Console.WriteLine(Titre("fin",100,true));
