@@ -147,7 +147,7 @@ public class Program
         }
         
         
-        Console.WriteLine(Titre("tp 2",100,true,true));
+        Console.WriteLine(Titre("tp 2",100,true));
         Console.WriteLine(Titre("exercice 1",100,false,true));
         if (visible[3])
         {
@@ -200,7 +200,7 @@ public class Program
         
         
         
-        Console.WriteLine(Titre("tp 3",100,true,true));
+        Console.WriteLine(Titre("tp 3",100));
         Console.WriteLine(Titre("exercice",100,false,true));
         if (visible[6]){
             ArticleTypé[] articles =
